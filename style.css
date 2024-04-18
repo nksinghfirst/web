@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #27374D;
+    color: #DDE6ED;
+    padding: 20px 0;
+    display: flex; justify-content: space-between ; 
+    box-shadow: 2px 1px 2px #27374D;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 60px; 
+    height: 40px;
+    border-radius: 10px; 
+    margin: 0px 20px;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none; /* Remove list styles */
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #526D82; /* Hover background color */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient( #526D82, #9DB2BF);
+    min-width: 120px;
+    z-index: 1;
+    right: 0px;
+    top: 30px;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 15px 10px;
+    color: #fff; /* Dropdown text color */
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #526D82; /* Hover background color */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.big-image{
+    background-color: url(./background.mov);
+    height: 100%;
+}
+
+.gs{
+    background-color:lightskyblue; font-size: 22px; border-radius: 3px; 
+    padding: 10px 30px; color: black; cursor: pointer;cursor: pointer; text-decoration: none;
+}
+
+a.gs:hover{
+    background-color: #DDE6ED;
+}
+
+

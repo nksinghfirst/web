@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive Hub</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <link rel="icon" href="../favicon.png" alt="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="../index.html" target="_blank">
+        <img src="../logo.gif" alt="Logo">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="../Home/index1.html">Home</a></li>
+            <li><a href="../Contact Us/indexCU.html">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="#">User</a>
+                <div class="dropdown-content">
+                    <a href="#">Signup</a>
+                    <a href="#">Signin</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+        <div class="box">
+            <h2>ZIP</h2>
+            <div class="file-upload">
+                <div class="selected-files" id="selectedFiles"></div>
+                <label for="fileInput">Choose Files or Folder</label>
+                <label class="custom-input" for="fileInput">Browse File</label>
+                <input type="file" id="fileInput" multiple>
+                <label class="custom-input" for="folderInput">Browse Folder</label>
+                <input type="file" id="folderInput" multiple webkitdirectory directory>
+            </div>
+            <button class="convert-button" id="convertButton">Convert & Download</button>                
+        </div>
+        <div class="box">
+            <h2>How to Convert</h2>
+            <ol>
+                <li>Step 1: Choose file or folder.</li>
+                <li>Step 2: Click the "Convert" button.</li>
+                <li>Step 3: Processed files will be available for download.</li>
+            </ol>
+        </div>
+
+        <div>
+            <div>
+                <h3>Other Options: </h3>
+            </div>
+            <div class="small-box"> <!-- remove the style for better optmizing for different screen size-->
+                <div class="option-box" style="margin-right: 80px; margin-left: 70px;">
+                    <a href="../RAR/index3.html" class="box-link">
+                        <h4>RAR</h4>
+                        <p>Convert files to RAR format</p>
+                    </a>
+                </div>
+                <div class="option-box" style="margin-right: 80px;">
+                    <a href="../TAR/index4.html" class="box-link">
+                        <h4>TAR</h4>
+                        <p>Convert files to TAR format</p>
+                    </a>
+                </div>
+                <div class="option-box" style="margin-right: 80px;">
+                    <a href="../7Z/index5.html" class="box-link">
+                        <h4>7Z</h4>
+                        <p>Convert files to 7Z format</p>
+                    </a>
+                </div>
+            </div>    
+        </div>
+    </div>
+  </main>
+  <footer>
+    <div class="foot">
+        <p class="foot-content">&copy; 2024</p>
+        <p class="foot-content">File Archival Utility Tool</p>
+        <a class="foot-content" href="../Created By/indexCB.html">Created By</a>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
